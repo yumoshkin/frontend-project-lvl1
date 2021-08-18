@@ -13,7 +13,7 @@ const calculate = (a, b, operator) => {
     case '*':
       return a * b;
     default:
-      return false;
+      throw new Error('Operator not supported');
   }
 };
 
